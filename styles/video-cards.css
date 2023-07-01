@@ -1,0 +1,57 @@
+.video-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: space-evenly;
+    cursor: pointer;
+    
+}
+.video-container,.video-card,.video-description,.video-title,.video-details,.channel-logo , .channel-name , .views ,.view-count,.uploaded-time{
+    background-color: black;
+}
+
+.video-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 23%;
+}
+.video-image{
+    position: relative;
+}
+.video-image img{
+    width: 100%;
+    background-color: black;
+}
+.duration{
+    position: absolute;
+    left: 220px;
+    bottom: 7px;
+    color: white;
+    font-size: 10px;
+    background-color: black;
+    padding: 2px;
+    z-index: 5;
+}
+.video-details{
+    display: flex;
+    gap: 10px;
+    color: white;
+}
+.video-details .channel-logo img{
+    background-color: black;
+}
+.video-description{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.video-title{
+    font-size: 14px;
+}
+.channel-name,.views{
+    font-size: 12px;
+    color:#AAAAAA;
+}

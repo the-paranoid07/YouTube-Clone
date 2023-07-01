@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Playing..</title>
+    <link rel="stylesheet" href="./styles/playVideo.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="left">
+            <div class="icon">
+                <img src="./assets/images/hamburger.png" alt="hamburger">
+            </div>
+            <div class="logo">
+                <img src="./assets/images/youtube-logo.png" alt="youtube">
+            </div>
+        </div>
+        <div class="middle">
+            <div class="search-bar">
+                <input type="search" placeholder="Search">
+                <img src="./assets/images/SearchBox-Button.png" alt="search">
+            </div>
+            <div class="icon">
+                <img src="./assets/images/voice-icon.png" alt="text-to-speech">
+            </div>
+        </div>
+        <div class="right">
+            <div class="icon">
+                <img src="./assets/images/Create.png" alt="create">
+            </div>
+            <div class="icon">
+                <img src="./assets/images/Apps.png" alt="Apps">
+            </div>
+            <div class="icon">
+                <img src="./assets/images/Notifications.png" alt="Notifications">
+            </div>
+            <div class="icon">
+                <img src="./assets/images/Profile.png" alt="profile">
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="video-container">
+            <div class="play-video">
+                <iframe id="yt-video" width="640" height="360" src="" allowfullscreen></iframe>
+            </div>
+            <div id="title-container" class="title-container">
+                <!-- <div class="title">
+                    My video title
+                </div>
+                <div class="details">
+                    <div class="left">
+                        <span class="views">123,456,78 views</span>
+                        <span class="uploaded-time">OCT 21,2020</span>
+                    </div>
+                    <div class="right">
+                        <div class="items">
+                            <img src="./assets/icons/like.png" alt="like">
+                            <p>3</p>
+                        </div>
+                        <div class="items">
+                            <img src="./assets/icons/dislike.png" alt="dislike">
+                        </div>
+                        <div class="items">
+                            <img src="./assets/icons/share.png" alt="share">
+                            <p>Share</p>
+                        </div>
+                        <div class="items">
+                            <img src="./assets/icons/save.png" alt="save">
+                            <p>Save</p>
+                        </div>
+                        <div class="items">
+                            <img src="./assets/icons/3-dot.png" alt="3-dot">
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div id="channel-container" class="channel-container">
+                <!-- <div class="title">
+                    <div class="left">
+                        <div class="logo">
+                            <img src="./User-Avatar.png" alt="">
+                        </div>
+                        <div class="details">
+                            <span class="name">Lorem, ipsum.</span>
+                            <span class="subsciber-count">72163 subscribers</span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+                <div class="description">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, ad dolorum esse, eos
+                        perferendis minima magnam voluptate suscipit totam earum, et sint quos illo!</span>
+                    <span class="show-more">SHOW MORE</span>
+                </div> -->
+            </div>
+            <div id="comments-container" class="comments-container">
+                <div class="top">
+                    <span class="comment-count">286 Comments</span>
+                    <span class="sort-by">
+                        <img src="./assets/icons/sort.png" alt="sort">
+                        <p>SORT BY</p>
+                    </span>
+                </div>
+                <div class="add-comment">
+                    <img src="./User-Avatar.png" alt="logo">
+                    <input type="text" placeholder="Add a public comment">
+                </div>
+                <div class="comment">
+                    <div class="upper">
+                        <div class="logo">
+                            <img src="./User-Avatar.png" alt="">
+                        </div>
+                        <div class="comment-info">
+                            <div class="user">
+                                <span class="username">Anish Pal</span>
+                                <span class="uploaded-ago">8 hour ago</span>
+                            </div>
+                            <div class="comment-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lower">
+                            <div class="like">
+                                <img src="./assets/icons/like.png" alt="like">
+                                <span>3</span>
+                            </div>
+                            <div class="dislike">
+                                <img src="./assets/icons/dislike.png" alt="dislike">
+                            </div>
+                            <div class="reply">REPLY</div>
+                    </div>
+                    <div class="show-reply">Show replies</div>
+
+                </div>
+            </div>
+        </div>
+        <div class="suggestion-container">
+            <div class="category">
+                <div class="items">All</div>
+                <div class="items">From this channel</div>
+            </div>
+            <div class="suggestion">
+                <div class="logo">
+                    <img src="./Images.png" alt="">
+                </div>
+                <div class="video-details">
+                    <div class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat.
+
+                    </div>
+                    <div class="channel-name">Lorem, ipsum.</div>
+                    <div class="views-upload">
+                        <span class="views">1M views</span>
+                        <span class="uploaded-tiem">. 3 years ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./scripts/playVideo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.sidebar{
+    padding: 20px;
+    color: #FFFFFF;
+    background-color: #212121;
+    width: 200px;
+}
+.container-1,.container-2, .container-3,.container-4{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-bottom: 1px solid white;
+}
+.sidebar .items :hover{
+    cursor: pointer;
+    background-color: grey;
+   
+}
+.container-3 img{
+    border-radius: 50%;
+    width: 80%;
+}
+.container-3 .items{
+    display: flex;
+    align-items:center ;
+}
+.container-3 .items .icon{
+    width: 20%;
+}

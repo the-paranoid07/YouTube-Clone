@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("./nav.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: #212121;
+    color: whitesmoke;
+ }
+ main{
+    margin: 80px 50px;
+    display: flex;
+    justify-content: space-between;
+ }
+ .video-container{
+   display: flex;
+   flex-direction: column;
+   margin-left:126px;
+   gap: 20px;
+ }
+ .video-container iframe{
+
+ }
+ .title-container{
+    display: flex;
+    flex-direction: column;
+ }
+ .title-container .details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .title-container .details .left{
+    display: flex;
+    gap: 10px;
+ }
+ .title-container .title{
+    font-size: 18px;
+ }
+ .title-container .details .left span{
+   color:#AAAAAA;
+   font-size: 14px;
+ }
+ .title-container .details .right{
+    display: flex;
+    gap: 10px;
+ }
+ .title-container .details .items{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+ }
+ .channel-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom:15px ;
+    border-bottom: 1px solid grey;
+ }
+ .channel-container .subsciber-count{
+    font-size: 11px;
+    color:#AAAAAA;
+ }
+ .channel-container .title{
+    display: flex;
+    justify-content: space-between;
+ }
+ .channel-container .title .left{
+    display: flex;
+    gap: 18px;
+ }
+ .channel-container .title .left .logo{
+    border-radius: 50%; 
+ }
+ .channel-container .title .left .details{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+ }
+ .channel-container button{
+    background-color:#CC0000;
+    outline: none;
+    border: none;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+
+ }
+ .channel-container .description{
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-size: 15px;
+ }
+ .channel-container .description .show-more{
+    font-size: 11px;
+    color:#AAAAAA;
+    font-weight: 800;
+    cursor: pointer;
+ }
+ .comments-container{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+ }
+ .comments-container .top{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+ }
+ .comments-container .top .comment-count{
+    font-size: 15px;
+ }
+ .comments-container .top .sort-by{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+ }
+ .comments-container .top 
+ .comment{
+    display: flex;
+    flex-direction: column;
+ }
+ .add-comment{
+    display: flex;
+    justify-content: stretch;
+    gap: 20px;
+ }
+ .add-comment input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+ }
+ .comment{
+    display: flex;
+    gap: 2px;;
+    flex-direction: column;
+ }
+ .comment .logo img{
+    border-radius: 50%;
+    min-width: 70%;
+ }
+ .upper{
+    display: flex;
+    gap: 20px;
+ }
+ .comment-info{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+ }
+ .comment-info .username{
+    font-size: 14px;
+ }
+ .comment-info .uploaded-ago{
+    font-size: 12px;
+    color: grey;
+ }
+ .lower{
+    margin-left: 67px;
+ }
+ .lower , .like , .dislike , .show-more{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+ }
+ .show-reply{
+    padding-left: 74px;
+    cursor: pointer;
+    color: grey;
+ }
+ .reply{
+    font-size: 12px;
+    color: grey;
+ }
+
+
+
+
+
+
+
+
+ .suggestion-container{
+    padding-right: 208px;
+    padding-left: 38px;
+ }
