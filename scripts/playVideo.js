@@ -105,6 +105,7 @@ function renderCommentsOntoUI(comments) {
   const commentsContainer = document.getElementById("comments-container");
 
   comments.forEach((comment) => {
+    let commentDisplay = comment.textDisplay.slice(0,50);
     commentsContainer.innerHTML += `
     <div class="comment">
                     <div class="upper">
@@ -117,7 +118,7 @@ function renderCommentsOntoUI(comments) {
                                 <span class="uploaded-ago">8 hour ago</span>
                             </div>
                             <div class="comment-description">
-                            ${comment.textDisplay}
+                            ${commentDisplay}
                             </div>
                         </div>
                     </div>
