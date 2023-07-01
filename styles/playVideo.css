@@ -124,7 +124,6 @@
     font-weight: 600;
     cursor: pointer;
  }
- .comments-container .top 
  .comment{
     display: flex;
     flex-direction: column;
@@ -133,6 +132,8 @@
     display: flex;
     justify-content: stretch;
     gap: 20px;
+    margin-left: -18px;
+
  }
  .add-comment input{
     width: 100%;
@@ -147,7 +148,7 @@
  }
  .comment img{
     border-radius: 50%;
-    width: 70%;
+    width: 30px;
  }
  .upper{
     display: flex;
@@ -185,7 +186,7 @@
  }
 
  .suggestion-container{
-    padding-right: 208px;
+     /* padding-right: 208px; */
     padding-left: 38px;
     display: flex;
     flex-direction: column;
@@ -203,7 +204,14 @@
  }
  .suggestion{
     display: flex;
+    flex-direction: column;
     gap: 10px;
+ }
+ .suggestion .items{
+    display: flex;
+   
+    gap: 10px;
+
  }
  .suggestion .logo img{
     width: 200px;

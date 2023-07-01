@@ -2,7 +2,7 @@
     padding: 20px;
     color: #FFFFFF;
     background-color: #212121;
-    width: 200px;
+    width: 220px;
 }
 .container-1,.container-2, .container-3,.container-4{
     padding: 10px 0px;
@@ -20,9 +20,10 @@
     border-radius: 50%;
     width: 80%;
 }
-.container-3 .items{
+.container-1 .items,.container-2 .items,.container-3 .items,.container-4 .items{
     display: flex;
     align-items:center ;
+    gap: 5px;
 }
 .container-3 .items .icon{
     width: 20%;

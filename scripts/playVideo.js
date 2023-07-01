@@ -11,9 +11,9 @@ async function getVideoDetails(videoId) {
     `;
   const fetchDetails = await fetch(url);
   const videoDetails = await fetchDetails.json();
-  console.log(videoDetails.items[0]);
+  //console.log(videoDetails.items[0]);
   renderVideoDetails(videoDetails.items[0]);
-}
+};
 
 getVideoDetails(videoId);
 
@@ -86,16 +86,24 @@ async function fetchCommentsObjects(videoId) {
 
   const response = await fetch(url);
   const comments = await response.json();
+  
+  console.log(comments.items);
+ 
+//   comments.items.forEach(item => {
+//     showReplies(item.id)
+//   })
   getCommentsData(comments.items);
-  // console.log(comments.items);
 }
 fetchCommentsObjects(videoId);
+
+let commentIds = [];
 
 function getCommentsData(commentObjects) {
   let commentData = [];
 
   for (let i = 0; i < commentObjects.length; i++) {
     commentData.push(commentObjects[i].snippet.topLevelComment.snippet);
+    commentIds.push(commentObjects[i].id);
   }
   //console.log(commentData);
   renderCommentsOntoUI(commentData);
@@ -105,7 +113,7 @@ function renderCommentsOntoUI(comments) {
   const commentsContainer = document.getElementById("comments-container");
 
   comments.forEach((comment) => {
-    let commentDisplay = comment.textDisplay.slice(0,50);
+    //let commentDisplay = comment.textDisplay.slice(0,50);
     commentsContainer.innerHTML += `
     <div class="comment">
                     <div class="upper">
@@ -118,7 +126,7 @@ function renderCommentsOntoUI(comments) {
                                 <span class="uploaded-ago">8 hour ago</span>
                             </div>
                             <div class="comment-description">
-                            ${commentDisplay}
+                            ${comment.textDisplay}
                             </div>
                         </div>
                     </div>
@@ -133,13 +141,21 @@ function renderCommentsOntoUI(comments) {
                             <div class="reply">REPLY</div>
                     </div>
                     <div class="show-reply">Show replies</div>
-
                 </div>
     `;
   });
 }
 
-//  async function showReplies(){
-//    const url = `${BASE_URL}/comments?part=snippet&parentId=COMMENT_ID&key=${API_KEY}`
+//  async function showReplies(commentId){
 
+//    console.log("inside function");
+
+//    const url = `${BASE_URL}/comments?part=snippet&maxResults=10&parentId=${commentId}&key=${API_KEY}`
+
+//    const responseReplies = await fetch(url);
+//    const replies = await responseReplies.json();
+
+//    console.log(replies.items);
+//    console.log("after clg")
 //  }
+
